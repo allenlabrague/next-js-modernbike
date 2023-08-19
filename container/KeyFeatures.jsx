@@ -19,11 +19,11 @@ const KeyFeatures = () => {
       {KeyFeaturesDetails.map((e) => (
         <motion.div
           variants={textVariant(0.6)}
-          className="grid place-items-center gap-5"
+          className="grid place-items-center gap-2 mt-10"
         >
           <Image key={e.title} src={e.image} alt={`image ${e.title}`} />
-          <h3 className=" text-2xl font-semibold">{e.title}</h3>
-          <p className="text-gray-400 text-center">{e.subtitle}</p>
+          <h3 className="text-xl font-semibold mt-5">{e.title}</h3>
+          <p className="text-gray-400 text-center text-sm">{e.subtitle}</p>
         </motion.div>
       ))}
     </motion.div>
