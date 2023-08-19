@@ -12,7 +12,7 @@ const RideAWeek = () => {
       initial="hidden"
       whileInView="show"
       viewport={{ once: false, amount: 0.25 }}
-      className="px-10 m-4 rounded-xl lg:px-0 lg:my-32 lg:w-[80%] lg:mx-auto flex flex-col items-center justify-center gap-5"
+      className="m-4 rounded-xl lg:px-0 lg:my-32 lg:w-[80%] lg:mx-auto flex flex-col items-center justify-center gap-5"
     >
       <TypingText title="Ride A Week" textStyles="text-center" />
       <div className="flex flex-col gap-5 mt-10">

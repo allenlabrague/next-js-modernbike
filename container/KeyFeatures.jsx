@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { staggerContainer, textVariant, slideIn } from "@/utils/motion";
+import { staggerContainer, textVariant } from "@/utils/motion";
 import { TypingText } from "@/components/CustomTexts";
 import { KeyFeaturesDetails } from "@/constants";
 import { Image } from "@nextui-org/image";
@@ -13,7 +13,7 @@ const KeyFeatures = () => {
       initial="hidden"
       whileInView="show"
       viewport={{ once: false, amount: 0.25 }}
-      className="px-10 m-4 rounded-xl lg:px-0 lg:my-32 lg:w-[80%] lg:mx-auto flex flex-col items-center justify-center gap-5"
+      className="m-4 rounded-xl lg:px-0 lg:my-32 lg:w-[80%] lg:mx-auto flex flex-col items-center justify-center gap-5"
     >
       <TypingText title="Key features" textStyles="text-center" />
       {KeyFeaturesDetails.map((e) => (

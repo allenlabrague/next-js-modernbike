@@ -12,7 +12,7 @@ const Hero = () => {
       initial="hidden"
       whileInView="show"
       viewport={{ once: false, amount: 0.25 }}
-      className="pt-10 px-10 m-4 rounded-xl lg:px-0 lg:my-32 lg:w-[80%] lg:mx-auto bg-[url(/bg-black.png)] bg-center bg-no-repeat bg-cover mt-10"
+      className="pt-10 px-6 m-4 rounded-xl lg:px-0 lg:my-32 lg:w-[80%] lg:mx-auto bg-[url(/bg-black.png)] bg-center bg-no-repeat bg-cover mt-28"
     >
       <motion.p
         variants={textVariant(0.2)}

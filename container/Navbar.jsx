@@ -11,7 +11,7 @@ const Navbar = () => {
       variants={navVariants}
       initial="hidden"
       whileInView="show"
-      className="flex items-center justify-between p-4"
+      className="flex items-center justify-between p-4 py-3 fixed top-0 z-50 bg-white w-full"
     >
       <h2 className="font-semibold uppercase text-2xl">cowboy.</h2>
       <HiMenuAlt3 fontSize={30} />

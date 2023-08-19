@@ -67,3 +67,45 @@ export const FeedbackDetails = [
       "Kudos to the team behind this website for curating such a fantastic collection of modern bikes. The range of brands and models is impressive, and the in-depth product descriptions, along with high-resolution images, gave me a comprehensive understanding of each bike. The checkout process was smooth, and my new bike arrived exactly as described. Five stars!",
   },
 ];
+
+export const TechSpecsDetails = [
+  {
+    key: "1",
+    title: "Key specification",
+    items: [
+      { subtitle: "Price", disc: "$ 2,190" },
+      { subtitle: "Colors", disc: "Black" },
+      {
+        subtitle: "About",
+        disc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+      },
+      { subtitle: "Discounted Price", disc: "$ 1,190" },
+    ],
+  },
+  {
+    key: "2",
+    title: "Bike",
+    items: [
+      { subtitle: "Price", disc: "$ 2,190" },
+      { subtitle: "Colors", disc: "Black" },
+      {
+        subtitle: "About",
+        disc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+      },
+      { subtitle: "Discounted Price", disc: "$ 1,190" },
+    ],
+  },
+  {
+    key: "3",
+    title: "Electronics",
+    items: [
+      { subtitle: "Price", disc: "$ 2,190" },
+      { subtitle: "Colors", disc: "Black" },
+      {
+        subtitle: "About",
+        disc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+      },
+      { subtitle: "Discounted Price", disc: "$ 1,190" },
+    ],
+  },
+];
