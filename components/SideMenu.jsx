@@ -5,6 +5,7 @@ import { HiMenuAlt2 } from "react-icons/hi";
 import { AiOutlineClose } from "react-icons/ai";
 import { navLinks } from "@/constants";
 import { sideItemVariants, sideVariants } from "@/utils/motion";
+import { Button } from "@nextui-org/button";
 
 const SideMenu = () => {
   const [open, cycleOpen] = useCycle(false, true);
@@ -26,13 +27,13 @@ const SideMenu = () => {
           <motion.aside
             initial={{ width: 0 }}
             animate={{
-              width: "100%",
+              width: 1000,
             }}
             exit={{
               width: 0,
-              transition: { delay: 1, duration: 0.4 },
+              transition: { delay: 1, duration: 0.8 },
             }}
-            className="bg-white shadow-md fixed top-10 left-0 h-max p-5"
+            className="bg-white shadow-md fixed top-10 left-0 h-screen p-5"
           >
             <motion.div
               initial="closed"
@@ -60,6 +61,22 @@ const SideMenu = () => {
                     </motion.li>
                   </motion.ul>
                 ))}
+                <motion.div
+                  variants={sideItemVariants}
+                  className="flex items-center gap-3"
+                >
+                  <div>
+                    <p className="text-sm text-black text-center">
+                      From $2,190 <s>$1,190</s>
+                    </p>
+                    <p className="text-xs text-gray-400 text-center">
+                      Discounts available
+                    </p>
+                  </div>
+                  <Button className="rounded-full bg-black text-white text-base font-medium px-7">
+                    Order now
+                  </Button>
+                </motion.div>
               </motion.ul>
             </motion.div>
           </motion.aside>

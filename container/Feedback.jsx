@@ -14,7 +14,7 @@ const Feedback = () => {
       initial="hidden"
       whileInView="show"
       viewport={{ once: false, amount: 0.25 }}
-      className="m-4 rounded-xl lg:px-0 lg:my-32 lg:w-[80%] lg:mx-auto flex flex-col items-center justify-center gap-5"
+      className="m-4 rounded-xl lg:px-0 lg:my-32 lg:w-[80%] lg:mx-auto"
       id="reviews"
     >
       <TypingText title="FeedBack" textStyles="text-center" />

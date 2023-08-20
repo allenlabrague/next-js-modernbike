@@ -28,7 +28,7 @@ const FeedbackCard = () => {
               </>
             }
           >
-            {e.comment}
+            <span className=" leading-relaxed">{e.comment}</span>
           </AccordionItem>
         ))}
       </Accordion>

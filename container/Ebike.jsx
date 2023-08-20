@@ -16,11 +16,11 @@ const Ebike = () => {
       className="m-4 rounded-xl lg:px-0 lg:my-32 lg:w-[80%] lg:mx-auto flex flex-col items-center justify-center gap-10 md:flex-row md:justify-between"
       id="overview"
     >
-      <div>
-        <TypingText title="Electric bike remagined" textStyles="text-center" />
+      <div className="md:w-[50%]">
+        <TypingText title="Electric bike" textStyles="text-center" />
         <motion.p
           variants={textVariant(0.4)}
-          className="text-center mt-4 md:w-[300px] md:text-left"
+          className="text-center text-gray-400 text-sm mt-4 w-[300px] mx-auto md:mx-0 md:text-left leading-relaxed"
         >
           Find your pace at the edge of the urban frontier for a new path
           forward.

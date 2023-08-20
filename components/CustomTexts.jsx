@@ -3,10 +3,10 @@
 import { motion } from "framer-motion";
 import { textContainer, textVariant2 } from "@/utils/motion";
 
-export const TypingText = ({ title, textStyles }) => (
+export const TypingText = ({ title }) => (
   <motion.p
     variants={textContainer}
-    className={`text-3xl font-medium text-center lg:text-left md:text-4xl lg:text-5xl text-black ${textStyles}`}
+    className="font-medium text-center md:text-left text-5xl text-black"
   >
     {Array.from(title).map((letter, index) => (
       <motion.span variants={textVariant2} key={index}>

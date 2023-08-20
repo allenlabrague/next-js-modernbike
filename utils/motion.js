@@ -39,7 +39,7 @@ export const sideItemVariants = {
     y: 0,
     opacity: 1,
     transition: {
-      y: { stiffness: 200, velocity: -100 },
+      y: { stiffness: 100, velocity: -100 },
       duration: 0.1,
     },
   },
@@ -47,7 +47,7 @@ export const sideItemVariants = {
     y: 20,
     opacity: 0,
     transition: {
-      y: { stiffness: 200 },
+      y: { stiffness: 100 },
       duration: 0.1,
     },
   },
