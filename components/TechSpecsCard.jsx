@@ -21,7 +21,7 @@ const TechSpecsCard = () => {
           {e.items.map((item, index) => (
             <div
               key={index}
-              className="flex items-center justify-between py-5 border-t-1 border-gray-500"
+              className="flex items-center justify-between py-5 lg:py-10 border-t-1 border-gray-500 lg:w-[50%] ml-auto"
             >
               <p>{item.subtitle}: </p>
               <p className=" text-right w-[250px]">

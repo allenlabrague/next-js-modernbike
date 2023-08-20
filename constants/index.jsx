@@ -1,9 +1,10 @@
 export const navLinks = [
-  { key: "overview", text: "Overview" },
-  { key: "key-features", text: "Key Features" },
-  { key: "ride-a-week", text: "Ride A Week" },
-  { key: "reviews", text: "Reviews" },
-  { key: "tech-specs", text: "Tech Specs" },
+  { key: "home", text: "Home", link: "home" },
+  { key: "overview", text: "Overview", link: "overview" },
+  { key: "key-features", text: "Key Features", link: "keyfeatures" },
+  { key: "ride-a-week", text: "Ride A Week", link: "rideaweek" },
+  { key: "reviews", text: "Reviews", link: "reviews" },
+  { key: "tech-specs", text: "Tech Specs", link: "techspecs" },
 ];
 
 export const EbikeDetails = ["/Ebike1.png", "/Ebike2.png", "/Ebike3.png"];

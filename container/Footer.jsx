@@ -19,12 +19,18 @@ const Footer = () => {
     return (
       <div onClick={() => handleDivClick(index)}>
         {isActive ? (
-          <div className="border-1 border-white p-1 rounded-full transition-all">
-            <div className={`rounded-full bg-[${color}] text-black w-4 h-4`} />
+          <div className="border-1 border-white p-1 rounded-full transition-all cursor-pointer">
+            <div
+              className={`rounded-full w-4 h-4`}
+              style={{ background: `${color}` }}
+            />
           </div>
         ) : (
-          <div className="border-1 border-gray-400 opacity-25 p-1 rounded-full transition-all">
-            <div className={`rounded-full bg-[${color}] text-black w-4 h-4`} />
+          <div className="border-1 border-gray-400 opacity-25 p-1 rounded-full transition-all cursor-pointer">
+            <div
+              className={`rounded-full w-4 h-4`}
+              style={{ background: `${color}` }}
+            />
           </div>
         )}
       </div>
@@ -67,7 +73,7 @@ const Footer = () => {
         </motion.div>
         <motion.div
           variants={slideIn("left", "spring", 0.4, 1)}
-          className="mt-10"
+          className="md:w-[90%] m-auto mt-5"
         >
           <Image src="bike.png" alt="bike" />
         </motion.div>

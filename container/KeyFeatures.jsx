@@ -13,19 +13,26 @@ const KeyFeatures = () => {
       initial="hidden"
       whileInView="show"
       viewport={{ once: false, amount: 0.25 }}
-      className="m-4 rounded-xl lg:px-0 lg:my-32 lg:w-[80%] lg:mx-auto flex flex-col items-center justify-center gap-5"
+      className="m-4 rounded-xl lg:px-0 lg:my-32 lg:w-[80%] lg:mx-auto"
+      id="keyfeatures"
     >
-      <TypingText title="Key features" textStyles="text-center" />
-      {KeyFeaturesDetails.map((e) => (
-        <motion.div
-          variants={textVariant(0.6)}
-          className="grid place-items-center gap-2 mt-10"
-        >
-          <Image key={e.title} src={e.image} alt={`image ${e.title}`} />
-          <h3 className="text-xl font-semibold mt-5">{e.title}</h3>
-          <p className="text-gray-400 text-center text-sm">{e.subtitle}</p>
-        </motion.div>
-      ))}
+      <TypingText title="Key features" />
+      <div className="grid place-content-center gap-10 md:grid-cols-2 lg:grid-cols-4 place-items-center mt-12">
+        {KeyFeaturesDetails.map((e) => (
+          <motion.div variants={textVariant(0.6)}>
+            <div className="flex flex-col items-center justify-center gap-5">
+              <Image
+                isZoomed
+                key={e.title}
+                src={e.image}
+                alt={`image ${e.title}`}
+              />
+              <h3 className="text-xl font-semibold">{e.title}</h3>
+              <p className="text-gray-400 text-center text-sm">{e.subtitle}</p>
+            </div>
+          </motion.div>
+        ))}
+      </div>
     </motion.div>
   );
 };

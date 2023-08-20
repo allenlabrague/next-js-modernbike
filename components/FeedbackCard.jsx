@@ -10,6 +10,7 @@ const FeedbackCard = () => {
         defaultExpandedKeys={FeedbackDetails[0].key}
         fullWidth
         showDivider={false}
+        className="lg:w-[50%] mx-auto"
       >
         {FeedbackDetails.map((e) => (
           <AccordionItem

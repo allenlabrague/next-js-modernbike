@@ -19,6 +19,40 @@ export const navVariants = {
   },
 };
 
+export const sideVariants = {
+  closed: {
+    transition: {
+      staggerChildren: 0.2,
+      staggerDirections: -1,
+    },
+  },
+  open: {
+    transition: {
+      staggerChildren: 0.2,
+      staggerDirections: 1,
+    },
+  },
+};
+
+export const sideItemVariants = {
+  open: {
+    y: 0,
+    opacity: 1,
+    transition: {
+      y: { stiffness: 200, velocity: -100 },
+      duration: 0.1,
+    },
+  },
+  closed: {
+    y: 20,
+    opacity: 0,
+    transition: {
+      y: { stiffness: 200 },
+      duration: 0.1,
+    },
+  },
+};
+
 export const slideIn = (direction, type, delay, duration) => ({
   hidden: {
     x: direction === "left" ? "-140%" : direction === "right" ? "100%" : 0,

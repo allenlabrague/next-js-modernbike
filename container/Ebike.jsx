@@ -13,17 +13,21 @@ const Ebike = () => {
       initial="hidden"
       whileInView="show"
       viewport={{ once: false, amount: 0.25 }}
-      className="m-4 rounded-xl lg:px-0 lg:my-32 lg:w-[80%] lg:mx-auto flex flex-col items-center justify-center gap-10"
+      className="m-4 rounded-xl lg:px-0 lg:my-32 lg:w-[80%] lg:mx-auto flex flex-col items-center justify-center gap-10 md:flex-row md:justify-between"
+      id="overview"
     >
       <div>
         <TypingText title="Electric bike remagined" textStyles="text-center" />
-        <motion.p variants={textVariant(0.4)} className="text-center mt-4">
+        <motion.p
+          variants={textVariant(0.4)}
+          className="text-center mt-4 md:w-[300px] md:text-left"
+        >
           Find your pace at the edge of the urban frontier for a new path
           forward.
         </motion.p>
         <motion.div
           variants={textVariant(0.5)}
-          className="flex flex-col items-center justify-center mt-7"
+          className="flex flex-col items-center justify-center mt-7 md:flex-row md:gap-3 md:items-start md:justify-start"
         >
           <Button className="rounded-full bg-black text-white text-base font-medium px-7 mb-2">
             Order now
@@ -38,11 +42,8 @@ const Ebike = () => {
           </div>
         </motion.div>
       </div>
-      <div>
-        <motion.div
-          variants={slideIn("left", "spring", 0.3, 0.6)}
-          className="relative"
-        >
+      <div className="m-auto">
+        <motion.div variants={textVariant(0.6)} className="relative">
           <EbikeCard />
         </motion.div>
       </div>
