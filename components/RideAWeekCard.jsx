@@ -8,7 +8,7 @@ const RideAWeekCard = () => {
   return (
     <motion.div variants={textVariant(0.6)} className="relative mt-10">
       <Image isZoomed src="/rideimg.png" className="relative" />
-      <div className="flex items-end justify-between absolute bottom-4 left-4 md:bottom-10 md:left-10 right-4 z-10">
+      <div className="flex items-end justify-between absolute bottom-4 left-4 md:bottom-10 md:left-10 md:right-10 right-4 z-10">
         <div className="flex flex-col gap-1 w-[150px] md:w-[300px]">
           <motion.h3
             variants={textVariant(0.7)}

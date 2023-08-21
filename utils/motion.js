@@ -20,35 +20,45 @@ export const navVariants = {
 };
 
 export const sideVariants = {
-  closed: {
+  initial: {
+    x: "100%",
+  },
+  enter: {
+    x: "0%",
     transition: {
-      staggerChildren: 0.2,
-      staggerDirections: -1,
+      duration: 0.8,
+      ease: [0.25, 1, 0.5, 1],
     },
   },
-  open: {
+  exit: {
+    x: "100%",
     transition: {
-      staggerChildren: 0.2,
-      staggerDirections: 1,
+      duration: 0.8,
+      ease: [0.25, 1, 0.5, 1],
     },
   },
 };
 
 export const sideItemVariants = {
-  open: {
-    y: 0,
-    opacity: 1,
+  initial: {
+    x: "80px",
+  },
+  enter: {
+    x: "0%",
     transition: {
-      y: { stiffness: 100, velocity: -100 },
-      duration: 0.1,
+      staggerChildren: 0.2,
+      staggerDirections: 1,
+      duration: 0.8,
+      ease: [0.25, 1, 0.5, 1],
     },
   },
-  closed: {
-    y: 20,
-    opacity: 0,
+  exit: {
+    x: "80px",
     transition: {
-      y: { stiffness: 100 },
-      duration: 0.1,
+      staggerChildren: 0.2,
+      staggerDirections: -1,
+      duration: 0.8,
+      ease: [0.25, 1, 0.5, 1],
     },
   },
 };
